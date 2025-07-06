@@ -5,7 +5,7 @@ FROM node:18-alpine AS deps
 WORKDIR /app
 
 # Copy dependency files from app folder
-COPY Mindmend_Chatrooms/package.json Mindmend_Chatrooms/package-lock.json* ./
+COPY Mindmend_Chatrooms/package.json ./
 
 # Install dependencies
 RUN npm install
